@@ -8,7 +8,9 @@ namespace Interfaces
 {
     interface IElectronicDevice
     {
-        string Brand { get; set; } 
+        
+        string Brand { get; set; }
+        bool isBroken { get; set; }
         void On();
         void Off();
         void ChangeBatery();

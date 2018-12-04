@@ -11,6 +11,8 @@ namespace Interfaces
 
         private int _volume = 30;
         private string _defaultProgramm = "ARD";
+        private bool _isBroken = false;
+
 
         public int Volume
         {
@@ -21,6 +23,22 @@ namespace Interfaces
             set
             {
                 _volume = value;
+            }
+        }
+
+        public bool isBroken
+        {
+            get
+            {
+                return _isBroken;
+            }
+            set
+            {
+                if (value == true)
+                {
+                    Console.WriteLine("Why did you smash the Remote ??");
+                }
+                _isBroken = value;
             }
         }
 
@@ -83,5 +101,6 @@ namespace Interfaces
             }
         }
 
+  
     }
 }

@@ -29,8 +29,18 @@ namespace Interfaces
 
             //powerButtonTv.Stop();
 
-            TV.ChangeProgramm();
+            if (TV.isBroken)
+            {
+                TV.ChangeProgramm();
+            }
+            else
+            {
+                TV.ChangeProgramm();
+            }
+           
 
+           
+       
 
             
 

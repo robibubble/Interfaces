@@ -10,11 +10,13 @@ namespace Interfaces
     {
         private int _volume;
 
+
         public string Brand { get; set; }
+        public bool isBroken { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public void ChangeBatery()
         {
-           
+
         }
 
         public void ChangeProgramm()
@@ -24,12 +26,12 @@ namespace Interfaces
 
         public void Off()
         {
-            
+
         }
 
         public void On()
         {
-            
+
         }
 
         public void VolumeDown()

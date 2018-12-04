@@ -49,7 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Radio.cs" />
     <Compile Include="Television.cs" />
-    <Compile Include="TVRemote.cs" />
+    <Compile Include="Remotes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
