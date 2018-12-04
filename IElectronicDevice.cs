@@ -12,6 +12,7 @@ namespace Interfaces
         void On();
         void Off();
         void ChangeBatery();
+        void ChangeProgramm();
         void VolumeUp();
         void VolumeDown();
     }

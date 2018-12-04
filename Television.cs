@@ -10,6 +10,7 @@ namespace Interfaces
     {
 
         private int _volume = 30;
+        private string _defaultProgramm = "ARD";
 
         public int Volume
         {
@@ -24,10 +25,20 @@ namespace Interfaces
         }
 
         public string Brand { get; set; }
+        public string DefaultProgramm { get; set; }
 
-        public Television(string brand = "No Brand")
+        public Television(string brand = "No Brand", string defaultProgramm = "ARD")
         {
-            Brand = brand; 
+            Brand = brand;
+            DefaultProgramm = defaultProgramm;
+        }
+
+        public void ChangeProgramm()
+        {
+            Console.WriteLine("What Programm would you like to change to ?");
+            string input = Console.ReadLine();
+            DefaultProgramm = input;
+            Console.WriteLine("Your are Watching ... {0}", input);
         }
 
         public void ChangeBatery()
@@ -72,6 +83,5 @@ namespace Interfaces
             }
         }
 
-       
     }
 }

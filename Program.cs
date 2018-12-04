@@ -11,20 +11,25 @@ namespace Interfaces
         static void Main(string[] args)
         {
 
-            IElectronicDevice TV = TVRemote.GetDevice();
-            PowerButton powerButton = new PowerButton(TV);
+            IElectronicDevice TV = Remotes.GetTvRemote();
+            PowerButton powerButtonTv = new PowerButton(TV);
 
-            powerButton.Start();
+            IElectronicDevice Radio = Remotes.GetRadioRemote();
+            PowerButton powerButtonRadio = new PowerButton(Radio);
 
-            TV.VolumeUp();
-            TV.VolumeUp();
+            //powerButtonTv.Start();
 
-            TV.ChangeBatery();
+            //TV.VolumeUp();
+            //TV.VolumeUp();
 
-            TV.VolumeDown();
-            TV.VolumeDown();
+            //TV.ChangeBatery();
 
-            powerButton.Stop();
+            //TV.VolumeDown();
+            //TV.VolumeDown();
+
+            //powerButtonTv.Stop();
+
+            TV.ChangeProgramm();
 
 
             

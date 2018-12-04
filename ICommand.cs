@@ -9,7 +9,6 @@ namespace Interfaces
     interface ICommand
     {
         void Start();
-        void ChangeBatery();
         void Stop();
     }
 }
